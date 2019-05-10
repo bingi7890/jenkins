@@ -1,13 +1,28 @@
+#pipeline {
+#   agent any
+#   tools { 
+#       maven 'Maven 3.6.1' 
+#       jdk 'jdk8' 
+#   }
+#   stage ('Build') {
+#       steps {
+#           echo 'hello-world'
+#           
+#       }
+#   }
+#}
+
 pipeline {
     agent any
-    tools { 
+    tools{
         maven 'Maven 3.6.1' 
-        jdk 'jdk8' 
-    }
-    stage ('Build') {
-        steps {
-            echo 'hello-world'
-            
+        jdk 'jdk8'
+    stages {
+        stage('Build') {
+            steps {
+                bat 'set'
+                echo "Hello-World'
+            }
         }
     }
 }
