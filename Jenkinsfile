@@ -1,3 +1,4 @@
+dir
 pipeline {
     agent any
     tools{
@@ -7,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'set'
-                echo "Hello-World.\n'
+                echo "Hello-World'
             }
         }
      }
