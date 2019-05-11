@@ -3,7 +3,7 @@ pipeline {
     agent any
     tools{
         maven "maven" 
-        jdk "null"
+       
      }
      stages {
         stage('Build') {
