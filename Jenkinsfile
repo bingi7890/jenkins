@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'set'
-                echo "Hello-World'
+                echo "Hello-World"
             }
         }
      }
