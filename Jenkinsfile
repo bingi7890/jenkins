@@ -1,4 +1,4 @@
-dir
+
 pipeline {
     agent any
     tools{
